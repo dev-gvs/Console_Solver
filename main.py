@@ -12,7 +12,7 @@ def main():
         print(f"y = {y:.2f}")
     except ValueError:
         print("Неверные входные данные!")
-    except (OverflowError, ZeroDivisionError):
+    except ArithmeticError:
         print("Нет решения!")
 
 
